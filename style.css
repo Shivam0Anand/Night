@@ -1,0 +1,291 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.mycanvas{
+    background-color: #113755;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 35px;
+    overflow: hidden;
+    z-index: 1;
+}
+.star{
+    height: 3px;
+    width: 3px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 1;
+}
+.s1{
+    top: 80px;
+    left: 300px;
+    opacity: 0.9;
+    animation: blink 800ms ease-in-out;
+    animation-iteration-count: infinite;
+}
+.s2{
+    top: 100px;
+    left: 50px;
+    opacity: 0.8;
+    animation: blink 1200ms ease-in-out;
+    animation-iteration-count: infinite;
+}
+.s3{
+    left: 120px;
+    top: 150px;
+    opacity: 0.5;
+    animation: blink 900ms ease-in-out;
+    animation-iteration-count: infinite;
+}
+.s4{
+    left: 180px;
+    top: 50px;
+    opacity: 0.6;
+    animation: blink 1500ms ease-in-out;
+    animation-iteration-count: infinite;
+}
+.s5{
+    left: 230px;
+    top: 110px;
+    animation: blink 1900ms ease-in-out;
+    animation-iteration-count: infinite;
+}
+.s6{
+    left: 280px;
+    top: 160px;
+    opacity: 0.2;
+    animation: blink 1600ms ease-in-out;
+    animation-iteration-count: infinite;
+}
+.s7 {
+    left: 240px;
+    top: 30px;
+    animation: blink 2100ms ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.moon{
+    height: 35px;
+    width: 35px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 90px;
+    top: 70px;
+    box-shadow: 0 0 1px 15px rgba(32, 105, 149, 0.6),
+                0 0 1px 35px rgba(32, 105, 149, 0.5),
+                0 0 1px 50px rgba(32, 105, 149, 0.3),
+                0 0 1px 70px rgba(32, 105, 149, 0.1);
+}
+.moon:before{
+    position: absolute;
+    content: "";
+    background-color: #EBEFE7;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    top:8px;
+    left: 6px;
+}
+.moon::after{
+    position: absolute;
+    content: "";
+    background: #EBEFE7;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    top: 20px;
+    left:12px;
+}
+.mountains{
+    position: absolute;
+    height: 60px;
+    width: 450px;
+    background: #144569;
+    bottom: 65px;
+    right: 0;
+    transform: rotate(5deg);
+}
+.m1{
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-bottom: 70px solid #144569;
+    border-left: 25px solid transparent;
+    border-right: 50px solid transparent;
+    left: 70px;
+    bottom: 10px;
+}
+.m2{
+    height: 80px;
+    width: 120px;
+    background-color: #144569;
+    position: absolute;
+    left: 113px;
+    bottom: 30px;
+    transform: rotate(30deg);
+}
+.m3{
+    height: 50px;
+    width: 175px;
+    background: #144569;
+    position: absolute;
+    left: 210px;
+    bottom: 30px;
+    transform: rotate(25deg);
+}
+.m4{
+    border-bottom: 55px solid #144569;
+    border-left: 105px solid transparent;
+    border-right: 50px solid transparent;
+    position: absolute;
+    left: 330px;
+    bottom: 50px; 
+}
+.land{
+    height: 80px;
+    width: 450px;
+    background: #041524;
+    position: absolute;
+    bottom: -5px;
+    transform: rotate(5deg);
+}
+.windmill{
+    height: 0;
+    width: 20px;
+    border-bottom: 38px solid #041524;
+    border-left: 2.5px solid transparent;
+    border-right: 2.5px solid transparent;
+    position: absolute;
+    bottom: 78px;
+    right: 210px;
+}
+.windmill::before{
+    position: absolute;
+    content: "";
+    background: #041524;
+    height: 10px;
+    width: 20px;
+    bottom: -1px;
+    left: 0.2px;
+    border-radius: 20px 20px 0 0;
+}
+.top{
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 0;
+    border-bottom: 6px solid #0B2231;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    position: absolute;
+    right: -3.2px;
+    top: 1px;
+}
+.light{
+    height: 4px;
+    width: 4px;
+    background: #8DAF76;
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px rgba(141, 175, 118, 0.3),
+                0 0 1px 4px rgba(141, 175, 118, 0.2);
+}
+.door{
+    background: #0f304f;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    bottom: -36px;
+    left: 5.5px;
+    border-radius: 10px 10 px 0 0;
+}
+.blades{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    bottom: -30px;
+    left: -20px;
+    animation: rotate 5s infinite linear;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.b1{
+    height: 25px;
+    width: 8px;
+    background: #041524;
+    position: absolute;
+}
+.b1::before{
+    position: absolute;
+    content: "";
+    background: #041524;
+    height: 6px;
+    width: 1.5px;
+    top: 25px;
+    left: 3px;
+}
+.b11{
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.b12{
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    transform: rotate(-90deg);
+}
+.b13{
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+.b14{
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    transform: rotate(90deg);
+    right: 8px;
+}
+.tree{
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-bottom: 32px solid #041524;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    left: 50px;
+    bottom: 78px;
+}
+.tree::before{
+    position: absolute;
+    content: "";
+    border-bottom: 25px solid #041524;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    bottom: -30px;
+    left: 3px;
+}
