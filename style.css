@@ -111,7 +111,7 @@ body{
     border-radius: 50%;
     top: 20px;
     left:12px;
-}
+}  
 .mountains{
     position: absolute;
     height: 60px;
@@ -255,6 +255,7 @@ body{
     top: 0;
     bottom: 0;
     transform: rotate(-90deg);
+    left: 8px;
 }
 .b13{
     margin: auto;
@@ -288,4 +289,69 @@ body{
     border-right: 6px solid transparent;
     bottom: -30px;
     left: 3px;
+}
+.girl{
+    height: 200px;
+    width: 100px;
+    display: grid;
+    position: absolute;
+    bottom: 78px;
+    transform: rotate(5deg);
+    left: 40px; 
+}
+.face{
+    background: rgb(214, 214, 214);
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: 171px;
+    right: 37px;
+    border-radius: 50%;
+}
+.stomach{
+    background-color:rgb(54, 50, 68);
+    width:12px;
+    height:20px;
+    border-radius:10px;
+    position:absolute ;
+    top:180px;
+    left: 52px;
+}
+
+.leg1 , .leg2{
+    background-color:rgb(214, 214, 214);
+    position:absolute ;
+    width:2px;
+    height:10px;
+    top:200px;
+    border-radius:10px;
+}
+
+.leg1{
+    left:60px;
+}
+
+.leg2{
+    right:44px;
+}
+
+.hand1 , .hand2 {
+    background-color:white;
+    width:2px;
+    height:15px;
+    position:absolute ;
+    top:170px;
+    border-radius:10px;
+}
+
+.hand1{
+    left:65px;
+    top: 182px;
+    transform:rotate(-15deg);
+}
+
+.hand2{
+    top: 183px;
+    right:49px;
+    transform:rotate(14deg);
 }
